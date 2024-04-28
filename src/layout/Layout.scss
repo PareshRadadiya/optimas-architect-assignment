@@ -1,3 +1,6 @@
 .dashboard-container {
 	height: $dashboard-container-height;
+	padding: $dashboard-container-vertical-padding
+		$dashboard-container-horizontal-padding;
+	overflow-y: auto;
 }

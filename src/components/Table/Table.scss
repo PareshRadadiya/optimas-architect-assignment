@@ -1,0 +1,14 @@
+.table-container {
+	width: 100%;
+}
+
+.table {
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+	table-layout: fixed;
+
+	// &.table__small {
+	// 	table-layout: unset;
+	// }
+}

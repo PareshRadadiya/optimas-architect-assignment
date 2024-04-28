@@ -1,0 +1,20 @@
+.dashboard {
+	&__title {
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 21px;
+		margin-bottom: 16px;
+	}
+	&__control {
+		display: flex;
+		margin-bottom: 16px;
+		align-items: center;
+		gap: 15px;
+
+		&__dropdown {
+			margin-left: auto;
+			width: 213px;
+			display: flex;
+		}
+	}
+}

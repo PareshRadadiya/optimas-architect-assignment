@@ -1,0 +1,42 @@
+.table {
+	&__head {
+		&__heading-row {
+			background-color: $bg-table-head;
+			th {
+				padding: 17px 11px;
+				line-height: 1.2;
+			}
+		}
+
+		&__search-row {
+			&__placeholder {
+				div {
+					background-color: $bg-input-color;
+					border: 1px solid transparent;
+					height: 24px;
+				}
+			}
+			th,
+			&__placeholder {
+				padding: 2px 1px;
+				&:first {
+					padding-left: 0;
+				}
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+
+	&.table__small {
+		.table__head {
+			&__heading-row {
+				th {
+					padding: 2px 11px;
+					line-height: 1.2;
+				}
+			}
+		}
+	}
+}

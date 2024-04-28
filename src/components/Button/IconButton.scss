@@ -1,0 +1,36 @@
+.icon-button {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 16px;
+	line-height: 18.75px;
+	border-bottom: 3px solid transparent;
+	svg {
+		width: 24px;
+		height: 24px;
+	}
+
+	&__primary {
+		background-color: $primary-color;
+		color: $font-dark-color;
+	}
+
+	&__thin-simple {
+		padding: 7px 14px;
+		font-size: 16px;
+		border: none;
+		width: 100%;
+		svg {
+			width: 12px;
+			height: 12px;
+		}
+	}
+
+	&__active {
+		border-image-slice: 1;
+		border-image-source: $gradient-board;
+		padding: 4px 15px;
+		font-weight: 500;
+		background-color: $secondary-color;
+	}
+}

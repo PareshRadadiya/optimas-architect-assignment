@@ -2,10 +2,13 @@
 $bg-primary-color: #11174a;
 $bg-secondary-color: #ffffff08;
 $bg-input-color: #ffffff1a;
+$bg-table-head: #ffbf0729;
 
 // Theme colors //
 $primary-color: #ffbf47;
+$primary-light-color: rgba(#ffbf47, 0.6);
 $secondary-color: #ffffff21;
+
 $danger: #f10e0e;
 $warning: #ff7a00;
 $success: #5cb85c;
@@ -13,9 +16,23 @@ $success: #5cb85c;
 $font-color: #ffffff;
 $font-dark-color: #07063b;
 
+$table-row-shadow: #ffffff0f;
+
 // spacing //
 $HF-vertical-padding: 15px;
 $HF-horizontal-padding: 24px;
 $footer-height: 115px;
 $header-height: 115px;
-$dashboard-container-height: calc(100vh - 230px);
+$dashboard-container-height: calc(
+	100vh - calc($header-height + $footer-height)
+);
+$dashboard-container-horizontal-padding: 104px;
+$dashboard-container-vertical-padding: 64px;
+$expander-margin-top: 28px;
+
+$gradient-board: linear-gradient(
+	to left,
+	$secondary-color,
+	$primary-color,
+	$secondary-color
+);

@@ -9,6 +9,7 @@
 		fill: none;
 		width: 16px;
 		height: 19px;
+		min-width: 16px;
 	}
 
 	input {
@@ -17,6 +18,13 @@
 		color: $font-color;
 		&::placeholder {
 			color: $font-color;
+		}
+	}
+
+	&__small {
+		input {
+			padding: 3px 14px;
+			font-size: 14px;
 		}
 	}
 }

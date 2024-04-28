@@ -5,9 +5,10 @@ type InputPropsType = {
 	type: string;
 	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 	value?: string;
-	placeholder: string;
+	placeholder?: string;
 	id?: string;
 	name?: string;
+	size?: 'small';
 	error?: {
 		message: string | undefined;
 	};
@@ -15,13 +16,13 @@ type InputPropsType = {
 };
 
 const Input = (props: InputPropsType) => {
-	const { prefix, error, autoComplete, onChange, ...res } = props;
+	const { prefix, error, size, autoComplete, onChange, ...res } = props;
 	return (
 		<div className="form-control">
 			<div
 				className={`input-box ${
 					error && error.message && 'error-border'
-				}`}
+				} ${size ? `input-box__${size}` : ''}`}
 			>
 				{prefix}
 				<input

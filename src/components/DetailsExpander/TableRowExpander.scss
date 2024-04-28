@@ -1,0 +1,20 @@
+.expander {
+	padding: 0 69px;
+	margin-top: $expander-margin-top;
+	position: relative;
+	&__shadow {
+		height: $expander-margin-top;
+		background-color: $table-row-shadow;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transform: translateY(-100%);
+		clip-path: polygon(0 0, 100% 0, 94.6% 100%, 5.4% 100%);
+	}
+	&__container {
+		padding: 20px;
+		height: 196px;
+		background-color: $bg-secondary-color;
+	}
+}
