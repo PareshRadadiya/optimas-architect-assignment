@@ -1,0 +1,79 @@
+.role-button {
+	// button size depend on parent size
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 14px;
+	cursor: pointer;
+
+	&__gif {
+		width: 100%;
+		height: 100%;
+		mix-blend-mode: lighten;
+		position: absolute;
+		inset: 0;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.5s;
+	}
+
+	&__layer {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		inset: 0;
+		fill: $font-color;
+		opacity: 0.3;
+		transition: all 0.5s;
+		transform: rotate(0deg);
+	}
+
+	&__role {
+		font-size: 16px;
+		line-height: 18.75px;
+		opacity: 0.3;
+		position: absolute;
+		bottom: -14px;
+	}
+
+	&__icon {
+		width: 24px;
+		height: 24px;
+		fill: $font-color;
+		opacity: 0.3;
+	}
+
+	&:hover {
+		.role-button__layer,
+		.role-button__icon,
+		.role-button__role {
+			opacity: 1;
+			color: $primary-color;
+			fill: $primary-color;
+		}
+		.role-button__layer {
+			transform: rotate(140deg);
+		}
+	}
+
+	&.role-button__active {
+		.role-button__gif {
+			visibility: visible;
+			opacity: 1;
+		}
+
+		.role-button__layer,
+		.role-button__icon,
+		.role-button__role {
+			fill: $primary-color;
+			opacity: 1;
+			color: $primary-color;
+		}
+		.role-button__layer {
+			transform: rotate(46deg);
+		}
+	}
+}

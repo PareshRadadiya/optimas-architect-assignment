@@ -1,0 +1,42 @@
+.header {
+	padding: $HF-vertical-padding $HF-horizontal-padding;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: $header-height;
+
+	&__logo {
+		img {
+			width: 231px;
+			height: 81px;
+		}
+	}
+
+	&__user-panel {
+		display: flex;
+		align-items: center;
+
+		&__notification {
+			position: relative;
+			width: 122px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			svg {
+				width: 32px;
+				height: 32px;
+			}
+
+			.lock-gif {
+				width: 100%;
+				height: auto;
+				mix-blend-mode: screen;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}

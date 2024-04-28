@@ -1,0 +1,40 @@
+.indicator {
+	position: relative;
+
+	span {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&__medium {
+		width: 12px;
+		height: 12px;
+	}
+
+	&__small {
+		width: 8px;
+		height: 8px;
+	}
+
+	&__large {
+		width: 18px;
+		height: 18px;
+	}
+
+	&__circle {
+		border-radius: 50%;
+	}
+
+	&__pending {
+		background-color: $warning;
+	}
+
+	&__danger {
+		background-color: $danger;
+	}
+
+	&__success {
+		background-color: $success;
+	}
+}

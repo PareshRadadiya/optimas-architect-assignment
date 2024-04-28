@@ -1,0 +1,32 @@
+.input-box {
+	background-color: $bg-input-color;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+	border: 1px solid transparent;
+
+	svg {
+		fill: none;
+		width: 16px;
+		height: 19px;
+	}
+
+	input {
+		padding: 6px 14px;
+		font-size: 16px;
+		color: $font-color;
+		&::placeholder {
+			color: $font-color;
+		}
+	}
+}
+
+.error {
+	color: $danger;
+	font-size: 16px;
+	line-height: 18.75px;
+	margin-top: 4px;
+}
+.error-border {
+	border-color: $danger;
+}

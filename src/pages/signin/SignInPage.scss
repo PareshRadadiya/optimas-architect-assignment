@@ -4,12 +4,14 @@
 	justify-content: center;
 	height: 100vh;
 	gap: 152px;
+	margin: 0 10%;
 }
+
 .glob {
 	position: relative;
 	width: 1212px;
 	height: 682px;
-	left: 29px;
+	left: -29px;
 	display: flex;
 	align-items: center;
 
@@ -18,5 +20,15 @@
 		opacity: 0.37;
 		width: 100%;
 		height: auto;
+		scale: 1.4;
 	}
+}
+
+.copy-right {
+	color: $font-color;
+	opacity: 0.35;
+	position: absolute;
+	bottom: 14px;
+	left: 50%;
+	transform: translateX(-50%);
 }

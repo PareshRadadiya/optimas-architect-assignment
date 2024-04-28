@@ -1,0 +1,42 @@
+.sign_in_card {
+	width: 373px;
+	text-align: left;
+
+	&__logo {
+		width: 216px;
+		height: auto;
+		margin-bottom: 24px;
+	}
+
+	&__form {
+		padding: 20px 40px;
+		background-color: $bg-secondary-color;
+		clip-path: polygon(
+			5% 0,
+			95% 0,
+			100% 5%,
+			100% 95%,
+			95% 100%,
+			5% 100%,
+			0 95%,
+			0 5%
+		);
+	}
+
+	&__input-group {
+		display: flex;
+		flex-direction: column;
+		gap: 13px;
+	}
+
+	&__footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 13px;
+	}
+
+	&__title {
+		margin-bottom: 13px;
+	}
+}

@@ -1,0 +1,50 @@
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 $HF-horizontal-padding;
+	overflow: hidden;
+	height: $footer-height;
+
+	&__grid-menu {
+		width: 200px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		left: -45px;
+
+		svg {
+			width: 22.88px;
+			height: 22.88px;
+		}
+
+		&__gif {
+			position: absolute;
+			width: 100%;
+			height: auto;
+			mix-blend-mode: lighten;
+			bottom: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__navigation {
+		display: flex;
+		align-items: center;
+		gap: 25px;
+		&__role-button-container {
+			width: 75px;
+			height: 75px;
+		}
+	}
+
+	&__hud-gif {
+		width: 200px;
+		mix-blend-mode: lighten;
+		right: -100px;
+		position: relative;
+		right: -50px;
+	}
+}

@@ -1,0 +1,65 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+body {
+	background: #11174a url(/src/assets/glaire.png) repeat-y center / cover;
+	color: $font-color;
+	font-family: 'Roboto Condensed';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16.41px;
+}
+.heading_h1,
+h1 {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 25.78px;
+}
+a {
+	color: $font-color;
+}
+ol,
+ul {
+	list-style: none;
+}
+
+input,
+button {
+	all: unset;
+}
+input:-internal-autofill-selected {
+	background-color: $bg-input-color !important;
+	color: $font-color !important;
+	appearance: unset !important;
+}
+input:focus-visible {
+	outline: unset !important;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
