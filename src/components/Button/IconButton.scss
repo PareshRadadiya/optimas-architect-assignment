@@ -4,6 +4,7 @@
 	gap: 8px;
 	font-size: 16px;
 	line-height: 18.75px;
+	overflow: hidden;
 	border-bottom: 3px solid transparent;
 	svg {
 		width: 24px;
@@ -14,12 +15,22 @@
 		background-color: $primary-color;
 		color: $font-dark-color;
 	}
+	&__secondary {
+		background-color: $bg-secondary-color;
+		color: $font-color;
+
+		svg {
+			stroke: $font-color;
+		}
+	}
 
 	&__thin-simple {
+		background-color: $secondary-color;
 		padding: 7px 14px;
 		font-size: 16px;
 		border: none;
 		width: 100%;
+
 		svg {
 			width: 12px;
 			height: 12px;
@@ -27,10 +38,19 @@
 	}
 
 	&__active {
-		border-image-slice: 1;
-		border-image-source: $gradient-board;
-		padding: 4px 15px;
-		font-weight: 500;
-		background-color: $secondary-color;
+		&:not(.icon-button__thin-simple) {
+			border-image-slice: 1;
+			border-image-source: $gradient-board;
+			padding: 4px 15px;
+			font-weight: 500;
+			background-color: $secondary-color;
+		}
+		&.icon-button__thin-simple {
+			background-color: $primary-color;
+			color: $font-dark-color;
+			svg {
+				stroke: $font-dark-color;
+			}
+		}
 	}
 }

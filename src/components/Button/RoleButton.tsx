@@ -1,7 +1,8 @@
 import React, { isValidElement, cloneElement, ReactElement } from 'react';
 import './RoleButton.scss';
 
-import ActiveGif from 'assets/gif/active.gif?react';
+import ActiveGif from 'assets/gif/active.gif';
+
 import Layer from 'assets/icons/layer.svg?react';
 
 type RoleButtonPropsTypes = {

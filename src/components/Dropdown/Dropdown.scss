@@ -1,0 +1,33 @@
+.dropdown {
+	position: relative;
+	width: 100%;
+
+	&__menu {
+		position: absolute;
+		bottom: -5px;
+		transform: translateY(100%);
+		min-width: 100px;
+		width: 100%;
+		backface-visibility: hidden;
+		z-index: 2;
+	}
+	&--top {
+		.dropdown__menu {
+			top: -5px;
+			bottom: unset;
+			transform: translateY(-100%);
+		}
+	}
+	&--left {
+		.dropdown__menu {
+			left: -5px;
+			transform: translate(-100%, 100%);
+		}
+	}
+	&--right {
+		.dropdown__menu {
+			right: -5px;
+			transform: translate(100%, 100%);
+		}
+	}
+}

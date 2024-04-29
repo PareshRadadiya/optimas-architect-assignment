@@ -15,7 +15,8 @@ import {
 import { TABLE_DATA } from '@/data/TableData';
 
 import RowDetails from 'components/common/RowDetails';
-import Button from 'components/Button/Button';
+import Dropdown from 'components/Dropdown/Dropdown';
+import AddUserForm from 'components/common/AddUserForm/AddUserForm';
 
 const UserTabContent = () => {
 	const headers = TABLE_DATA.header.map((item) => {
@@ -28,6 +29,24 @@ const UserTabContent = () => {
 
 	const renderDetails = (details: DetailsType) => {
 		return <RowDetails details={details} />;
+	};
+
+	const renderButton = (toggleDropdown: () => void, isOpen: boolean) => {
+		return (
+			<IconButton
+				prefix={<PlusIcon />}
+				variant="secondary"
+				size="thin-simple"
+				isActive={isOpen}
+				onClick={toggleDropdown}
+			>
+				Add User
+			</IconButton>
+		);
+	};
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	const renderDropdown = (_: any, close: () => void) => {
+		return <AddUserForm close={close} />;
 	};
 
 	return (
@@ -52,13 +71,10 @@ const UserTabContent = () => {
 					</IconButton>
 				</Tab>
 				<div className="dashboard__control__dropdown">
-					<IconButton
-						prefix={<PlusIcon />}
-						variant="primary"
-						size="thin-simple"
-					>
-						Add User
-					</IconButton>
+					<Dropdown
+						renderButton={renderButton}
+						renderDropdown={renderDropdown}
+					/>
 				</div>
 			</div>
 

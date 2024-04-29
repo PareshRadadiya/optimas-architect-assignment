@@ -9,6 +9,8 @@ import LockGif from 'assets/gif/lock.gif';
 import BellIcon from 'assets/icons/bell.svg?react';
 import AvatarImg from 'assets/avatar.jpg';
 
+import Navigation from 'components/Navigation/Navigation';
+
 const Header = () => {
 	return (
 		<header className="header">
@@ -17,6 +19,8 @@ const Header = () => {
 					<img src={Logo} alt="Logo" />
 				</a>
 			</div>
+
+			<Navigation />
 
 			<ul className="header__user-panel">
 				<li className="header__user-panel__notification">

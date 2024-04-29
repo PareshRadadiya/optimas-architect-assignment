@@ -1,4 +1,6 @@
 import React from 'react';
+import ActionColumn from 'components/common/ActionColumn/ActionColumn';
+import FilterHeaderColumn from '@/components/common/FilterHeaderColumn/FilterHeaderColumn';
 
 export enum ColumnIds {
 	userId = 'userId',
@@ -35,6 +37,7 @@ type ColumnConfig = {
 		id: key;
 		displayName: string;
 		render: (value: string) => JSX.Element;
+		renderHeader: (column: { id: string; name: string }) => JSX.Element;
 	};
 };
 
@@ -42,51 +45,64 @@ export const TableColumnConstant: ColumnConfig = {
 	[ColumnIds.userId]: {
 		id: ColumnIds.userId,
 		displayName: 'User ID',
-		render: (value: string) => <>{value}</>,
+		render: (value) => <>{value}</>,
+		renderHeader: (column) => <FilterHeaderColumn column={column} />,
 	},
 	[ColumnIds.userName]: {
 		id: ColumnIds.userName,
 		displayName: 'User Name',
-		render: (value: string) => <>{value}</>,
+		render: (value) => <>{value}</>,
+		renderHeader: (column) => <FilterHeaderColumn column={column} />,
 	},
 	[ColumnIds.emailId]: {
 		id: ColumnIds.emailId,
 		displayName: 'Email ID',
-		render: (value: string) => <>{value}</>,
+		render: (value) => <>{value}</>,
+		renderHeader: (column) => <FilterHeaderColumn column={column} />,
 	},
 	[ColumnIds.phone]: {
 		id: ColumnIds.phone,
 		displayName: 'Phone',
-		render: (value: string) => <>{value}</>,
+		render: (value) => <>{value}</>,
+		renderHeader: (column) => <FilterHeaderColumn column={column} />,
 	},
 	[ColumnIds.noOfProjects]: {
 		id: ColumnIds.noOfProjects,
 		displayName: 'No of Projects',
-		render: (value: string) => <>{value}</>,
+		render: (value) => <>{value}</>,
+		renderHeader: (column) => <>{column.name}</>,
 	},
 	[ColumnIds.designation]: {
 		id: ColumnIds.designation,
 		displayName: 'Designation',
-		render: (value: string) => <>{value}</>,
+		render: (value) => <>{value}</>,
+		renderHeader: (column) => <FilterHeaderColumn column={column} />,
 	},
 	[ColumnIds.name]: {
 		id: ColumnIds.name,
 		displayName: 'Name',
-		render: (value: string) => <>{value}</>,
+		render: (value) => <>{value}</>,
+		renderHeader: (column) => <>{column.name}</>,
 	},
+
+	// User Info data Table
+
 	[ColumnIds.description]: {
 		id: ColumnIds.description,
 		displayName: 'Description',
-		render: (value: string) => <>{value}</>,
+		render: (value) => <>{value}</>,
+		renderHeader: (column) => <>{column.name}</>,
 	},
 	[ColumnIds.dueDate]: {
 		id: ColumnIds.dueDate,
 		displayName: 'Due date',
-		render: (value: string) => <>{value}</>,
+		render: (value) => <>{value}</>,
+		renderHeader: (column) => <>{column.name}</>,
 	},
 	[ColumnIds.action]: {
 		id: ColumnIds.action,
 		displayName: 'Action',
-		render: () => <>View</>,
+		render: () => <ActionColumn />,
+		renderHeader: (column) => <>{column.name}</>,
 	},
 };

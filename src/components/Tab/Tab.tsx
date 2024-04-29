@@ -1,9 +1,9 @@
-import React, { ReactElement, ReactNode } from 'react';
+import React, { ReactElement } from 'react';
 import { useTabContext } from './Tabs';
 
 type TabPropsType = {
 	name: string;
-	children: ReactNode;
+	children: ReactElement;
 };
 
 const Tab = ({ name, children }: TabPropsType) => {

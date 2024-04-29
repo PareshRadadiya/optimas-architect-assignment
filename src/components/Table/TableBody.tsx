@@ -41,8 +41,10 @@ const TableBody = ({
 					clickedRow.index !== null &&
 					!clickedRow.isCollapsed &&
 					index > clickedRow.index;
+
+				const key = isRowHidden ? `hidden_${index}` : index;
 				return (
-					<>
+					<React.Fragment key={key}>
 						{!isRowHidden && (
 							<TableBodyRow
 								detail={item?.detail}
@@ -60,7 +62,7 @@ const TableBody = ({
 								))}
 							</TableBodyRow>
 						)}
-					</>
+					</React.Fragment>
 				);
 			})}
 		</tbody>

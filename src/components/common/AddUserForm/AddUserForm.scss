@@ -1,0 +1,38 @@
+.add_user_form {
+	padding: 14px 11px 24px 11px;
+	background-color: $primary-color;
+
+	&__box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		svg {
+			width: 16px;
+			height: 16px;
+			stroke: $font-dark-color;
+			stroke-width: 2.5px;
+			cursor: pointer;
+		}
+	}
+
+	&__title {
+		font-size: 16px;
+		line-height: 18.75px;
+		font-weight: 500;
+		color: $font-dark-color;
+	}
+
+	&__footer {
+		display: flex;
+		align-items: center;
+		margin-top: 24px;
+		gap: 18px;
+	}
+	.input-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 11px;
+		padding: 18px 6px 0 6px;
+	}
+}

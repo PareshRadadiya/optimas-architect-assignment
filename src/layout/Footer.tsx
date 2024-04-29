@@ -5,7 +5,7 @@ import RadioGif from 'assets/gif/radio.gif';
 import HudGif from 'assets/gif/hud.gif';
 import RoleButton from '@/components/Button/RoleButton';
 
-import UserTie from 'assets/icons/icon _user_tie_.svg?react';
+import UserTie from 'assets/icons/icon_user_tie_.svg?react';
 import UserTenant from 'assets/icons/tenant_app_icon.svg?react';
 
 const Footer = () => {

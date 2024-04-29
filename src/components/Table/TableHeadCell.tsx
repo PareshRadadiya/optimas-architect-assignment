@@ -1,14 +1,15 @@
 import React from 'react';
+import { renderHeaderCell } from '@/utils/renderCell';
 
 type TableHeadCellPropsType = {
 	cell: { id: string; name: string };
 };
 const TableHeadCell = (props: TableHeadCellPropsType) => {
-	const { name } = props.cell;
 	return (
 		<th>
-			{name}
-			<div className="filter-box"></div>
+			<div className="table__head__heading-row__heading-cell">
+				{renderHeaderCell(props.cell)}
+			</div>
 		</th>
 	);
 };

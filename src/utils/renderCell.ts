@@ -11,3 +11,7 @@ export const renderCell = (
 	const value = item[column.id as ColumnIds] ?? '';
 	return TableColumnConstant[column.id as ColumnIds]?.render(value);
 };
+
+export const renderHeaderCell = (column: { id: string; name: string }) => {
+	return TableColumnConstant[column.id as ColumnIds]?.renderHeader(column);
+};

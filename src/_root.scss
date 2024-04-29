@@ -47,9 +47,19 @@ ul {
 }
 
 input,
-button {
-	all: unset;
+button,
+select {
+	background-color: unset;
+	border: unset;
+	color: unset;
+	outline: unset;
 }
+
+button,
+a {
+	cursor: pointer;
+}
+
 input:-internal-autofill-selected {
 	background-color: $bg-input-color !important;
 	color: $font-color !important;

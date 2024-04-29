@@ -5,6 +5,11 @@
 	padding: 0 10px;
 	border: 1px solid transparent;
 
+	&.ph-0 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	svg {
 		fill: none;
 		width: 16px;
@@ -12,10 +17,12 @@
 		min-width: 16px;
 	}
 
-	input {
+	input,
+	select {
 		padding: 6px 14px;
 		font-size: 16px;
 		color: $font-color;
+		width: 100%;
 		&::placeholder {
 			color: $font-color;
 		}
@@ -25,6 +32,22 @@
 		input {
 			padding: 3px 14px;
 			font-size: 14px;
+		}
+	}
+}
+
+.theme-white {
+	.input-box {
+		background-color: $white;
+
+		input,
+		select {
+			color: $font-dark-color2;
+			font-size: 14px;
+			font-weight: 400;
+			&::placeholder {
+				color: $font-dark-color2;
+			}
 		}
 	}
 }

@@ -37,12 +37,22 @@ const SignInCard = ({ onLogin }: SignInCardPropsType) => {
 		const errors: ErrorStateType = {};
 		let isValid = true;
 
-		if (LoginUser.userName !== userName) {
+		if (userName === '') {
+			errors.userName = 'Username is required';
+			isValid = false;
+		}
+
+		if (userName && LoginUser.userName !== userName) {
 			errors.userName = 'Username not available';
 			isValid = false;
 		}
 
-		if (LoginUser.password !== password) {
+		if (password === '') {
+			errors.password = 'Password is required';
+			isValid = false;
+		}
+
+		if (password && LoginUser.password !== password) {
 			errors.password = 'Password is incorrect';
 			isValid = false;
 		}

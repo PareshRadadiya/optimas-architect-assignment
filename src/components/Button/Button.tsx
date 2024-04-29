@@ -7,8 +7,8 @@ type ButtonPropsType = {
 	children: ReactNode;
 	className?: string;
 	isActive?: boolean;
-	variant?: 'primary' | 'secondary' | 'outline' | 'icon-button';
-	size?: 'small' | 'medium' | 'large';
+	variant?: 'primary' | 'secondary' | 'outline' | 'dark' | 'simple';
+	size?: 'small' | 'medium' | 'large' | 'square';
 	onClick?: () => void;
 };
 
@@ -18,7 +18,7 @@ const Button = (props: ButtonPropsType) => {
 
 	const buttonClass = `button ${isActive ? 'button__active' : ''} ${
 		variant ? `button__${variant}` : ''
-	} button__${size || ''} ${className || ''}`.trim();
+	} ${size ? `button__${size || ''}` : ''} ${className || ''}`.trim();
 
 	return (
 		<button className={buttonClass} type={type} {...res}>
