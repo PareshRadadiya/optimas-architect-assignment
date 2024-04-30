@@ -2,8 +2,8 @@ import React from 'react';
 
 import './ActionColumn.scss';
 
-import EditIcon from 'assets/icons/edit-3.svg?react';
-import LinkIcon from 'assets/icons/link.svg?react';
+import EditIcon from 'assets/icons/edit-3.svg';
+import LinkIcon from 'assets/icons/link.svg';
 
 const ActionColumn = () => {
 	return (

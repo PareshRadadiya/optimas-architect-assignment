@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './Navigation.scss';
 
 import GifButton from '@/components/Common/Button/GifButton';
-import UserTie from 'assets/icons/icon_user_tie_.svg?react';
-import TechIcon from 'assets/icons/alternate_tachometer.svg?react';
-import BagIcon from 'assets/icons/bag.svg?react';
-import CogIcon from 'assets/icons/cogs.svg?react';
-import Button from '../Button/Button';
+import UserTie from 'assets/icons/icon_user_tie_.svg';
+import TechIcon from 'assets/icons/alternate_tachometer.svg';
+import BagIcon from 'assets/icons/bag.svg';
+import CogIcon from 'assets/icons/cogs.svg';
+
 
 const Navigation = () => {
 	const [active, setActive] = useState<string>('Users');

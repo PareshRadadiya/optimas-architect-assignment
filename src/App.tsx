@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { useState } from 'react';
 import './App.scss';
 import SignInPage from 'pages/signin/SignInPage';

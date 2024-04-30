@@ -20,7 +20,7 @@ const GifButton = (props: GifButtonPropsTypes) => {
 				className: `${
 					icon.props.className ? `${icon.props.className} ` : ''
 				}gif-button__icon`,
-		  })
+		})
 		: icon;
 
 	return (

@@ -1,6 +1,6 @@
 import React, { ReactElement, ReactNode, useState } from 'react';
 
-import ArrowDown from 'assets/icons/arrow-down.svg?react';
+import ArrowDown from 'assets/icons/arrow-down.svg';
 import { DetailsType } from 'constants/TableColumnConstant';
 import TableRowExpander from '../../DetailsExpander/TableRowExpander';
 

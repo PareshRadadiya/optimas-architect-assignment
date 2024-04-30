@@ -1,7 +1,7 @@
 import React from 'react';
 import Input from '../Form/Inputs/Input';
 
-import SearchIcon from 'assets/icons/search.svg?react';
+import SearchIcon from 'assets/icons/search.svg';
 
 const TableHeaderSearchCell = ({ id }: { id: string }) => {
 	return (

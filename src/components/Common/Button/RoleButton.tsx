@@ -3,7 +3,7 @@ import './RoleButton.scss';
 
 import ActiveGif from 'assets/gif/active.gif';
 
-import Layer from 'assets/icons/layer.svg?react';
+import Layer from 'assets/icons/layer.svg';
 
 type RoleButtonPropsTypes = {
 	role: string;
@@ -22,7 +22,7 @@ const RoleButton = (props: RoleButtonPropsTypes) => {
 				className: `${
 					icon.props.className ? `${icon.props.className} ` : ''
 				}role-button__icon`,
-		  })
+		})
 		: icon;
 
 	return (

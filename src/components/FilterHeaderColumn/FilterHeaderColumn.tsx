@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './FilterHeaderColumn.scss';
 
-import ArrowDown from 'assets/icons/arrow-down.svg?react';
-import DirArrowDown from 'assets/icons/dir-arrow-down.svg?react';
-import FilterIcon from 'assets/icons/filter.svg?react';
+import ArrowDown from 'assets/icons/arrow-down.svg';
+import DirArrowDown from 'assets/icons/dir-arrow-down.svg';
+import FilterIcon from 'assets/icons/filter.svg';
 
 import Dropdown from '@/components/Common/Dropdown/Dropdown';
 import Checkbox from '@/components/Common/Form/Checkbox/Checkbox';
@@ -68,7 +68,7 @@ const FilterHeaderColumn = (props: FilterHeaderColumnPropsTypes) => {
 				className="filter-column__name"
 			>
 				<span>{column.name}</span>
-				<ArrowDown style={{ scale: isSort ? '-1' : '' }} />
+			<span  style={{display:"flex", scale: isSort ? '-1' : '' }}>	<ArrowDown /></span>
 			</div>
 			<div className="filter-column__filter">
 				<Dropdown

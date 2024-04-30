@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import Logo from 'assets/logo.png';
-import UserIcon from 'assets/icons/user.svg?react';
-import Key from 'assets/icons/key.svg?react';
+import UserIcon from 'assets/icons/user.svg';
+import Key from 'assets/icons/key.svg';
 
 import './SignInCard.scss';
 import Input from '@/components/Common/Form/Inputs/Input';
@@ -38,22 +38,22 @@ const SignInCard = ({ onLogin }: SignInCardPropsType) => {
 		let isValid = true;
 
 		if (userName === '') {
-			errors.userName = 'Username is required';
+			errors.userName = 'Username is required (hint: root)';
 			isValid = false;
 		}
 
 		if (userName && LoginUser.userName !== userName) {
-			errors.userName = 'Username not available';
+			errors.userName = 'Username not available (hint: root)';
 			isValid = false;
 		}
 
 		if (password === '') {
-			errors.password = 'Password is required';
+			errors.password = 'Password is required (hint: root)';
 			isValid = false;
 		}
 
 		if (password && LoginUser.password !== password) {
-			errors.password = 'Password is incorrect';
+			errors.password = 'Password is incorrect (hint: root)';
 			isValid = false;
 		}
 
@@ -68,7 +68,7 @@ const SignInCard = ({ onLogin }: SignInCardPropsType) => {
 		}
 	};
 
-	const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+	const onChangeHandler = (e: React.ChangeEvent<{ name: string, value: unknown }>) => {
 		const { name, value } = e.target;
 		setData((prev) => ({
 			...prev,

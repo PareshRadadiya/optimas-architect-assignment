@@ -1,7 +1,7 @@
 import React from 'react';
 import './AddUserForm.scss';
 
-import CrossIcon from 'assets/icons/x.svg?react';
+import CrossIcon from 'assets/icons/x.svg';
 import Input from '@/components/Common/Form/Inputs/Input';
 import Button from '@/components/Common/Button/Button';
 

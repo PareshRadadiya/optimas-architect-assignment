@@ -1,4 +1,4 @@
 export const LoginUser = {
-	userName: 'user',
-	password: 'user',
+	userName: 'root',
+	password: 'root',
 };

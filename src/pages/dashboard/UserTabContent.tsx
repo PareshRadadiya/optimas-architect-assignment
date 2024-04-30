@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Tab, TabPanel, Tabs } from '@/components/Common/Tab';
 import IconButton from '@/components/Common/Button/IconButton';
-import BookIcon from 'assets/icons/book.svg?react';
-import TickCircle from 'assets/icons/tickcircle.svg?react';
-import PlusIcon from 'assets/icons/plus.svg?react';
+import BookIcon from 'assets/icons/book.svg';
+import TickCircle from 'assets/icons/tickcircle.svg';
+import PlusIcon from 'assets/icons/plus.svg';
 
 import Table from '@/components/Common/Table/Table';
 

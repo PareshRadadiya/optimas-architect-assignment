@@ -6,7 +6,7 @@ import Avatar from '@/components/Common/Avatar/Avatar';
 
 import Logo from 'assets/logo2.png';
 import LockGif from 'assets/gif/lock.gif';
-import BellIcon from 'assets/icons/bell.svg?react';
+import BellIcon from 'assets/icons/bell.svg';
 import AvatarImg from 'assets/avatar.jpg';
 
 import Navigation from '@/components/Common/Navigation/Navigation';
