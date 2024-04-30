@@ -2,8 +2,8 @@ import React from 'react';
 import './AddUserForm.scss';
 
 import CrossIcon from 'assets/icons/x.svg?react';
-import Input from 'components/Form/Inputs/Input';
-import Button from 'components/Button/Button';
+import Input from '@/components/Common/Form/Inputs/Input';
+import Button from '@/components/Common/Button/Button';
 
 type AddUserFormPropsType = {
 	close: () => void;

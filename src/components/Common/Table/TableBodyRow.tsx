@@ -2,7 +2,7 @@ import React, { ReactElement, ReactNode, useState } from 'react';
 
 import ArrowDown from 'assets/icons/arrow-down.svg?react';
 import { DetailsType } from 'constants/TableColumnConstant';
-import TableRowExpander from '../DetailsExpander/TableRowExpander';
+import TableRowExpander from '../../DetailsExpander/TableRowExpander';
 
 type TableBodyRow = {
 	children: ReactNode;

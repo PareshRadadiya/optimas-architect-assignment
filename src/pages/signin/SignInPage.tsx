@@ -2,7 +2,7 @@ import React from 'react';
 import glob from 'assets/gif/glob.gif';
 import './SignInPage.scss';
 
-import SignInCard from 'components/Card/SignInCard';
+import SignInCard from '@/components/Common/Card/SignInCard';
 
 type SignInPagePropsTypes = {
 	onLogin: (isLogin: boolean) => void;

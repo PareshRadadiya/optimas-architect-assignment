@@ -5,8 +5,8 @@ import ArrowDown from 'assets/icons/arrow-down.svg?react';
 import DirArrowDown from 'assets/icons/dir-arrow-down.svg?react';
 import FilterIcon from 'assets/icons/filter.svg?react';
 
-import Dropdown from 'components/Dropdown/Dropdown';
-import Checkbox from 'components/Form/Checkbox/Checkbox';
+import Dropdown from '@/components/Common/Dropdown/Dropdown';
+import Checkbox from '@/components/Common/Form/Checkbox/Checkbox';
 
 type FilterHeaderColumnPropsTypes = {
 	column: { id: string; name: string };

@@ -5,7 +5,7 @@ import Layout from 'layout/Layout';
 import Dashboard from 'pages/dashboard/Dashboard';
 
 function App() {
-	const [login, setLogin] = useState<boolean>(true);
+	const [login, setLogin] = useState<boolean>(false);
 
 	return (
 		<main className="main-container">

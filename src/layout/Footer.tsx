@@ -3,7 +3,7 @@ import './Footer.scss';
 import GridIcon from 'assets/icons/grid.svg?react';
 import RadioGif from 'assets/gif/radio.gif';
 import HudGif from 'assets/gif/hud.gif';
-import RoleButton from '@/components/Button/RoleButton';
+import RoleButton from '@/components/Common/Button/RoleButton';
 
 import UserTie from 'assets/icons/icon_user_tie_.svg?react';
 import UserTenant from 'assets/icons/tenant_app_icon.svg?react';

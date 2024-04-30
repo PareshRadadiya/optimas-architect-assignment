@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navigation.scss';
 
-import GifButton from 'components/Button/GifButton';
+import GifButton from '@/components/Common/Button/GifButton';
 import UserTie from 'assets/icons/icon_user_tie_.svg?react';
 import TechIcon from 'assets/icons/alternate_tachometer.svg?react';
 import BagIcon from 'assets/icons/bag.svg?react';

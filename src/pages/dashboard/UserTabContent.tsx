@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { Tab, TabPanel, Tabs } from 'components/Tab';
-import IconButton from 'components/Button/IconButton';
+import { Tab, TabPanel, Tabs } from '@/components/Common/Tab';
+import IconButton from '@/components/Common/Button/IconButton';
 import BookIcon from 'assets/icons/book.svg?react';
 import TickCircle from 'assets/icons/tickcircle.svg?react';
 import PlusIcon from 'assets/icons/plus.svg?react';
 
-import Table from 'components/Table/Table';
+import Table from '@/components/Common/Table/Table';
 
 import {
 	DetailsType,
@@ -14,9 +14,9 @@ import {
 } from 'constants/TableColumnConstant';
 import { TABLE_DATA } from '@/data/TableData';
 
-import RowDetails from 'components/common/RowDetails';
-import Dropdown from 'components/Dropdown/Dropdown';
-import AddUserForm from 'components/common/AddUserForm/AddUserForm';
+import RowDetails from '@/components/RowDetails';
+import Dropdown from '@/components/Common/Dropdown/Dropdown';
+import AddUserForm from '@/components/AddUserForm/AddUserForm';
 
 const UserTabContent = () => {
 	const headers = TABLE_DATA.header.map((item) => {

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Tab, TabPanel, Tabs } from 'components/Tab';
-import Button from '../Button/Button';
-import UserInfoTabContent from 'components/common/UserInfoTabContent';
-import TaskTabContent from 'components/common/TaskTabContent';
+import { Tab, TabPanel, Tabs } from '@/components/Common/Tab';
+import Button from './Common/Button/Button';
+import UserInfoTabContent from '@/components/UserInfoTabContent/UserInfoTabContent';
+import TaskTabContent from '@/components/TaskTabContent/TaskTabContent';
 import { DetailsType } from '@/constants/TableColumnConstant';
 type RowDetailsPropsType = {
 	details: DetailsType;

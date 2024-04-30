@@ -5,8 +5,8 @@ import UserIcon from 'assets/icons/user.svg?react';
 import Key from 'assets/icons/key.svg?react';
 
 import './SignInCard.scss';
-import Input from 'components/Form/Inputs/Input';
-import Button from 'components/Button/Button';
+import Input from '@/components/Common/Form/Inputs/Input';
+import Button from '@/components/Common/Button/Button';
 import { LoginUser } from 'constants/user';
 
 type ErrorStateType = {

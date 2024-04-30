@@ -1,6 +1,6 @@
 import React from 'react';
 import './TaskTabContent.scss';
-import Table from 'components/Table/Table';
+import Table from '@/components/Common/Table/Table';
 import { ColumnIds, TableColumnConstant } from 'constants/TableColumnConstant';
 
 type TaskTabContentPropsType = {

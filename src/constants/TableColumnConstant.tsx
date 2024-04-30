@@ -1,6 +1,6 @@
 import React from 'react';
-import ActionColumn from 'components/common/ActionColumn/ActionColumn';
-import FilterHeaderColumn from '@/components/common/FilterHeaderColumn/FilterHeaderColumn';
+import ActionColumn from '@/components/ActionColumn/ActionColumn';
+import FilterHeaderColumn from '@/components/FilterHeaderColumn/FilterHeaderColumn';
 
 export enum ColumnIds {
 	userId = 'userId',

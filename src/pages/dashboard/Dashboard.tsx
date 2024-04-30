@@ -1,7 +1,7 @@
 import React from 'react';
 import './Dashboard.scss';
-import { Tab, TabPanel, Tabs } from 'components/Tab';
-import Button from 'components/Button/Button';
+import { Tab, TabPanel, Tabs } from '@/components/Common/Tab';
+import Button from '@/components/Common/Button/Button';
 import UserTabContent from './UserTabContent';
 
 const Dashboard = () => {
